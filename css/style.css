@@ -19,7 +19,7 @@ header{
 	color:#ffffff;
 	padding-top: 30px;
 	min-height: 70px;
-	border-bottom: #07e7ff 3px solid;
+	border-bottom: #07e7ff 3px sh;
 }
 
 header a{
@@ -164,4 +164,16 @@ footer{
 
 footer p{
 	color: #07e7ff;	
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+.kotak {
+    box-shadow: 0px 4px 5px #181616;
+    padding: 0px;
 }
