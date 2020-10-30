@@ -42,6 +42,7 @@ header li{
 
 header #branding{
 	float: left;
+	margin-top: 10px;
 }
 
 header #branding h1{
@@ -55,7 +56,7 @@ header #branding a{
 
 header nav{
 	float:right;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 header .highlight{
@@ -89,7 +90,7 @@ header .current a:hover{
 /*Showcase*/
 
 #showcase{
-	min-height:auto;
+	min-height:100px;
 	background:url('../img/2927262.jpg');
 	background-repeat: repeat;
 	background-size: auto;
@@ -106,6 +107,7 @@ header .current a:hover{
 	border-bottom: #07e7ff 3px solid;
 	margin-left: 20%;
 	margin-right: 20%;
+	margin-top: 70px;
 }
 .marginAbout{
 	margin-bottom: 250%;
@@ -129,8 +131,8 @@ header .current a:hover{
 }
 
 .contentHome{
-	margin-top: 100%;
-	margin-bottom: 100%;
+	margin-top: 250px;
+	margin-bottom: 300px;
 }
 
 #newslatter{
