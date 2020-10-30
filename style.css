@@ -1,0 +1,89 @@
+.costomNav{
+    font-weight: bold;
+    font-size: 16pt;
+    color: #07e7ff;
+}
+
+.bg-costom {
+    background-color: #032a4b !important;
+  }
+  
+  a.bg-costom:hover, a.bg-costom:focus,
+  button.bg-light:hover,
+  button.bg-light:focus {
+    background-color: #032a4b !important;
+  }
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+.kotak {
+    box-shadow: 0px 4px 5px #181616;
+    padding: 0px;
+}
+
+#showcase{
+	min-height:100px;
+	background:url('../img/2927262.jpg');
+	background-repeat: repeat;
+	background-size: auto;
+	text-align: center;
+	color: white;
+	border-bottom: #07e7ff 3px solid;
+}
+
+#showcase1{
+	min-height:auto;
+	background-color:#ffffff;
+	text-align: left;
+	color:black;
+	border-bottom: #07e7ff 3px solid;
+	margin-top: 70px;
+}
+.marginAbout{
+    margin-bottom: 250%;
+    margin-top: px;
+}
+
+.marginPost{
+	margin-bottom:250%;
+	text-align: center;
+	font-size: 14pt;
+}
+
+ #showcase h1{
+ 	font-size: 40px;
+	margin-bottom: 5px;
+	text-align: center; 
+}
+
+ #showcase p{
+	 font-size: 20px;
+	 margin: 0px;	 
+}
+.containercostom{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+
+.contentHome{
+	margin-top: 250px;
+	margin-bottom: 300px;
+}
+
+
+footer{
+	background-color: #032a4b;
+	text-align: center;
+	font-size: 10pt;
+	padding:1px;
+	border-top: #07e7ff;
+    margin-top:px;
+
+}
+footer p{
+	color: #07e7ff;	
+}
