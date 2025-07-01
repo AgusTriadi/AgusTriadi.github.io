@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agus Triadi – Portfolio</title>
+  
+  <!-- JetBrains Mono Font -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Optional: hide scrollbar */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-white z-50 shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-xl font-bold">Agus Triadi</h1>
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#work" class="hover:text-blue-600">Project</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <!-- Mobile Hamburger -->
+      <button id="menuButton" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileDrawer" class="fixed top-0 right-0 h-full w-64 bg-white shadow transform translate-x-full transition-transform duration-300 z-50">
+    <div class="p-6 space-y-4">
+      <button id="closeDrawer" class="text-gray-700">&larr; Close</button>
+      <a id="aboutLink" href="#about" class="block text-lg">About</a>
+      <a id="workLink" href="#work" class="block text-lg">Project</a>
+      <a id="contactLink" href="#contact" class="block text-lg">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-4 pb-12 pt-3 flex flex-col md:flex-row items-center gap-8">
+        <!-- Text -->
+        <div class="w-full hidden md:block md:w-[49%] text-center md:text-left md:pt-20">
+            <h2 class="text-3xl md:text-5xl font-bold mb-2">Hi! I’m <span class="text-blue-600">Agus Triadi</span></h2>
+            <p class="text-6xl tracking-wider font-bold inline-block bg-blue-600 text-white px-5 py-2 mb-10">Web Developer</p>
+            <p class="mb-10 text-lg/8 text-justify">I believe technology is not just about coding, but creating useful and efficient solutions. I believe technology is not just about coding.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <!-- My Contact -->
+                <a id="contactBtn"
+                    href="#contact"
+                    class="bg-blue-600 text-white px-4 py-2 rounded transition duration-300 hover:bg-blue-700">
+                    My Contact
+                </a>
+
+                <!-- My Resume -->
+                <a id="resumeBtn"
+                    href="#"
+                    class="border border-blue-600 text-blue-600 px-4 py-2 rounded transition duration-300 hover:bg-blue-600 hover:text-white">
+                    My Resume
+                </a>
+            </div>
+        </div>
+
+        <div class="block md:hidden text-center">
+          <h2 class="text-3xl md:text-5xl font-bold mb-1">Hi! I’m <span class="text-blue-600">Agus Triadi</span></h2>
+          <p class="text-4xl tracking-wider font-bold inline-block bg-blue-600 text-white px-5 py-2">Web Developer</p>
+        </div>
+  
+
+        <!-- Profile Image -->
+        <div class="w-full md:w-[45%] flex justify-center md:justify-end relative ml-auto">
+          <!-- Blue Border Circle -->
+          <img class="absolute size-[24rem] border-[20px] md:border-[25px] border-blue-600 rounded-full" />
+          <!-- Profile Image -->
+          <img src="profil.png" alt="Agus Triadi"
+              class="rounded-full size-[24rem] object-cover object-top z-10" />
+          
+        </div>
+
+        <div class="block md:hidden">
+          <p class="mb-5 text-md/4 text-justify">I believe technology is not just about coding, but creating useful and efficient solutions. I believe technology is not just about coding.</p>
+          <div class="flex flex-row gap-4 justify-center text-center">
+                <!-- My Contact -->
+                <a id="contactBtnMbl"
+                    href="#contact"
+                    class="bg-blue-600 text-white px-4 py-2 rounded transition duration-300 hover:bg-blue-700">
+                    My Contact
+                </a>
+
+                <!-- My Resume -->
+                <a id="resumeBtnMbl"
+                    href="#"
+                    class="border border-blue-600 text-blue-600 px-4 py-2 rounded transition duration-300 hover:bg-blue-600 hover:text-white">
+                    My Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- About Me -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-12">
+    <br>
+    <h3 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">About Me</h3>
+    <p class="text-gray-700">I’m a web developer with a passion for clean, efficient code and impactful digital experiences. With a background in Information Systems, I focus on frontend and backend web development using modern tools.</p>
+  </section>
+
+  <!-- My Latest Work -->
+  <section id="work" class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-6">My Latest Work</h3>
+    <div class="flex overflow-x-auto scrollbar-hide space-x-4">
+      <!-- Project Cards -->
+      <div class="min-w-[250px] h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-semibold">Project 1</div>
+      <div class="min-w-[250px] h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-semibold">Project 2</div>
+      <div class="min-w-[250px] h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-semibold">Project 3</div>
+      <div class="min-w-[250px] h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-semibold">Project 4</div>
+      <div class="min-w-[250px] h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-semibold">Project 5</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Contact</h3>
+    <ul class="text-gray-700 space-y-2">
+      <li>Email: agus@example.com</li>
+      <li>Instagram: @agus.triadi</li>
+      <li>LinkedIn: linkedin.com/in/agustriadi</li>
+    </ul>
+  </section>
+
+  <script>
+    const resumeBtn = document.getElementById('resumeBtn');
+    const contactBtn = document.getElementById('contactBtn');
+
+    resumeBtn.addEventListener('mouseenter', () => {
+        contactBtn.classList.remove('bg-blue-600', 'text-white');
+        contactBtn.classList.add('border', 'border-blue-600', 'text-blue-600', 'bg-white');
+    });
+
+    resumeBtn.addEventListener('mouseleave', () => {
+        contactBtn.classList.remove('border', 'border-blue-600', 'text-blue-600', 'bg-white');
+        contactBtn.classList.add('bg-blue-600', 'text-white');
+    });
+
+
+    const menuButton = document.getElementById('menuButton');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const closeDrawer = document.getElementById('closeDrawer');
+    const overlay = document.getElementById('overlay');
+
+    const aboutLink = document.getElementById('aboutLink');
+    const workLink = document.getElementById('workLink');
+    const contactLink = document.getElementById('contactLink');
+
+    menuButton.addEventListener('click', () => {
+      mobileDrawer.classList.remove('translate-x-full');
+      overlay.classList.remove('hidden');
+    });
+
+    closeDrawer.addEventListener('click', () => {
+      mobileDrawer.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+      mobileDrawer.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    aboutLink.addEventListener('click', () => {
+      mobileDrawer.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    workLink.addEventListener('click', () => {
+      mobileDrawer.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    contactLink.addEventListener('click', () => {
+      mobileDrawer.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+  </script>
+
+</body>
+</html>
